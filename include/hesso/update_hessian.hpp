@@ -6,6 +6,8 @@
 #include <Eigen/Eigenvalues>
 #include <vector>
 
+namespace hesso {
+
 template<typename T, typename P>
 void
 updateHessian(Eigen::MatrixXd& H,
@@ -88,3 +90,5 @@ updateHessian(Eigen::MatrixXd& H,
     Hinv = Hinv_new;
   }
 }
+
+} // namespace hesso
